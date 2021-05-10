@@ -9,6 +9,7 @@ public class Anonymous {
 			
 		}
 	};
+	
 	void method1() {
 		Vehicle localVar = new Vehicle() {
 			
@@ -21,6 +22,7 @@ public class Anonymous {
 		};
 		localVar.run();
 	}
+	
 	void method2(Vehicle v) {
 		v.run();
 	}
