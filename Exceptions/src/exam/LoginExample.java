@@ -4,7 +4,7 @@ public class LoginExample {
 
 	public static void main(String[] args) {
 		try {
-			login("white", "12345");
+			login("blue", "12345");
 		} catch (Exception e) {
 			System.out.println(e.getMessage());
 		}
@@ -30,6 +30,7 @@ public class LoginExample {
 			throw new WrongPasswordException("비밀번호가 틀렸습니다");
 		}else {
 			System.out.println("비밀번호가 맞습니다");
+			System.out.println("로그인 성공");
 		}
 	}
 
