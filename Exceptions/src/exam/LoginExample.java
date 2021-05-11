@@ -26,7 +26,9 @@ public class LoginExample {
 		}
 
 		// password가 "12345"가 아니라면 WrongPasswordException 발생시킴
+		//if(password.equals("12345")!=true) { // 아래와 같음
 		if (!password.equals("12345")) {
+			
 			throw new WrongPasswordException("비밀번호가 틀렸습니다");
 		}else {
 			System.out.println("비밀번호가 맞습니다");
