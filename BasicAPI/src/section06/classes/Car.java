@@ -1,4 +1,4 @@
-package section03.deepclone;
+package section06.classes;
 
 public class Car {
 	public String model;
