@@ -1,0 +1,15 @@
+package section03;
+
+public class AddFunctionalInterfaceExample {
+
+	public static void main(String[] args) {
+		AddFunctionalInterface addFunc = (x, y) -> {
+			int result = x + y;
+			return result;
+		};
+		int result = addFunc.add(99, 1);
+		System.out.println("result : " + result);
+
+	}
+
+}
