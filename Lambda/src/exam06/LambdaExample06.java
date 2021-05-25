@@ -5,7 +5,8 @@ import java.util.function.ToIntFunction;
 public class LambdaExample06 {
 	private static Student[] students = { 
 			new Student("Hong", 90, 96), 
-			new Student("Shin", 95, 93) };
+			new Student("Shin", 95, 93) 
+			};
 
 	// avg() 메소드 작성
 	public static double avg(ToIntFunction<Student> tif) {

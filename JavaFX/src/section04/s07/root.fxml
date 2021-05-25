@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/16">
+	<children>
+		<ImageView fitHeight="300" fitWidth="500">
+			<image>
+				<Image url="@duck.jpeg" />
+			</image>
+		</ImageView>
+		<ImageView fitHeight="210.0" fitWidth="260.0" rotate="5.2">
+			<image>
+				<Image url="@sunglasses.png" />
+			</image>
+		</ImageView>
+	</children>
+</StackPane>
