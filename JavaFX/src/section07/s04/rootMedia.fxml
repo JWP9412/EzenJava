@@ -1,5 +1,8 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import javafx.scene.control.*?>
+<?import javafx.scene.media.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.paint.*?>
 <?import java.lang.*?>
 <?import javafx.scene.layout.*?>
@@ -7,6 +10,17 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.shape.Circle?>
 
-<BorderPane  prefHeight="200.0" prefWidth="400.0" xmlns:fx="http://javafx.com/fxml" fx:controller="section07.s04.MediaController">
 
-</BorderPane>
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="220.0" prefWidth="530.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <StackPane layoutX="10.0" layoutY="10.0" prefHeight="150.0" prefWidth="200.0">
+         <children>
+            <ImageView fx:id="imageView" fitHeight="200.0" fitWidth="360.0" pickOnBounds="true" preserveRatio="true" />
+            <MediaView fx:id="mediaView" fitHeight="200.0" fitWidth="360.0" preserveRatio="false" />
+         </children>
+      </StackPane>
+      <Button fx:id="btnPlay" layoutX="385.0" layoutY="15.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="131.0" text="재생" />
+      <Button fx:id="btnPause" layoutX="385.0" layoutY="39.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="131.0" text="멈춤" />
+      <Button fx:id="btnStop" layoutX="385.0" layoutY="63.0" mnemonicParsing="false" prefHeight="23.0" prefWidth="131.0" text="중지" />
+   </children>
+</AnchorPane>
