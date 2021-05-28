@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.control.Button?>
+
+<HBox alignment="CENTER" prefHeight="100.0" prefWidth="500.0" spacing="20.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+   	<Button id="labelOne" text="검정바탕,노랑글씨"/>
+      <Label id = "labelId" text="검정바탕,노랑글씨" />
+      <Label styleClass="labelClass" text="파랑바탕,흰글씨" />
+      <Label styleClass="labelClass" text="파랑바탕,흰글씨" />
+   </children>
+</HBox>

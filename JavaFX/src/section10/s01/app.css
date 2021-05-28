@@ -1,0 +1,23 @@
+/* css ÆÄÀÏ */
+
+Label{
+	-fx-padding: 25;
+}
+
+Button{
+	-fx-padding: 25;
+}
+
+#labelId{
+	-fx-background-color: black;
+	-fx-text-fill: yellow;
+}
+
+#labelOne{
+	-fx-background-color: black;
+	-fx-text-fill: yellow;
+}
+.labelClass{
+	-fx-background-color: blue;
+	-fx-text-fill: white;
+}

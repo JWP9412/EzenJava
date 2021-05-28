@@ -1,10 +1,6 @@
-package section07.s05;
+package section10.s01;
 /*
- * 차트 컨트롤
- * - BarChart
- * - PieChart
- * - AreaChart
- * - LineChart 등등
+ * CSS(Cascading Style Sheets) 캐스케이딩 스타일 시트
  */
 
 import java.io.IOException;
@@ -21,13 +17,15 @@ import javafx.scene.layout.HBox;
 import javafx.scene.layout.Pane;
 import javafx.stage.Stage;
 
-public class ChartControls extends Application{
+public class StyleSheets extends Application{
 	@Override
 	public void start(Stage ps) throws Exception{
-			Parent root = (Parent)FXMLLoader.load(getClass().getResource("rootChart.fxml"));
+			Parent root = (Parent)FXMLLoader.load(getClass().getResource("root.fxml"));
 			Scene scene = new Scene(root);
 			
-			ps.setTitle("Chart Controls");
+			scene.getStylesheets().add(getClass().getResource("app.css").toString());
+			
+			ps.setTitle("Cascading Style Sheets Demo");
 			ps.setScene(scene);
 			ps.show();
 	}

@@ -28,7 +28,7 @@ public class MediaController implements Initializable{
 		
 		// 미디어 객체 생성
 		//Media media = new Media(getClass().getResource("media/video.m4v").toString());
-		Media media = new Media(getClass().getResource("media/audio.wav").toString());
+		Media media = new Media(getClass().getResource("media/nuc.wav").toString());
 		
 		
 		//미디어 플레이어 생성 및 미디어 뷰에 설정
@@ -41,11 +41,36 @@ public class MediaController implements Initializable{
 			@Override
 			public void run() {
 				btnPlay.setDisable(false); btnPause.setDisable(true); btnStop.setDisable(true);
-				
 			}
 		});
 		
+		mediaPlayer.setOnPlaying(()->{		//Playing 상태가 될 때 실행
+			btnPlay.setDisable(true); btnPause.setDisable(false); btnStop.setDisable(false);
+		});
+		
+		mediaPlayer.setOnPaused(()->{		//Paused 상태가 될 때 실행
+			btnPlay.setDisable(false); btnPause.setDisable(true); btnStop.setDisable(false);
+		});
+		
+		mediaPlayer.setOnEndOfMedia(()->{	//EndOfMedia 상태가 될 때 실행
+			endOfMedia = true;
+			btnPlay.setDisable(false); btnPause.setDisable(true); btnStop.setDisable(true);
+		});
+		
+		mediaPlayer.setOnStopped(()->{	//Stoped 상태가 될 때 실행
+			btnPlay.setDisable(false); btnPause.setDisable(true); btnStop.setDisable(true);
+		});
+		
+		//버튼 ActionEvent 처리
+		btnPlay.setOnAction(event -> {
+			if(endOfMedia) {									// EndOfMedia 상태일 경우
+				mediaPlayer.stop();								// 재생 중지
+				mediaPlayer.seek(mediaPlayer.getStartTime());	// 재생시간을 처음으로 돌림
+			}
+			mediaPlayer.play();
+			endOfMedia = false;
+		});
+		btnPause.setOnAction(event->mediaPlayer.pause());
+		btnStop.setOnAction(event->mediaPlayer.stop());
 	}
-	
-	
 }

@@ -5,7 +5,9 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.layout.HBox?>
 
-<HBox prefHeight="250.0" prefWidth="850.0" xmlns:fx="http://javafx.com/fxml" fx:controller="section07.s05.ChartController">
+<HBox prefHeight="250.0" prefWidth="850.0" 
+xmlns:fx="http://javafx.com/fxml" 
+fx:controller="section07.s05.ChartController">
  <children>
       <PieChart fx:id="pieC" />
       <BarChart fx:id="barC">
