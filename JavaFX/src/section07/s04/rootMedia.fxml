@@ -11,9 +11,9 @@
 xmlns:fx="http://javafx.com/fxml"
 fx:controller="section07.s04.MediaController">
    <children>
-      <StackPane layoutX="10.0" layoutY="10.0" prefHeight="150.0" prefWidth="200.0">
+      <StackPane layoutX="10.0" layoutY="10.0" >
          <children>
-            <ImageView fx:id="imageView" fitHeight="200.0" fitWidth="360.0" pickOnBounds="true" preserveRatio="false">
+            <ImageView fx:id="imageView" fitHeight="200.0" fitWidth="360.0" preserveRatio="false">
                <image>
                   <Image url="@ddoong.jpg" />
                </image></ImageView>
