@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.control.ComboBox?>
+<?import javafx.scene.input.KeyCodeCombination?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.collections.*?>
+<?import java.lang.*?>
+
+<BorderPane prefHeight="200.0" prefWidth="400.0"
+ xmlns:fx="http://javafx.com/fxml"
+	fx:controller="section08.s01.MenuController">
+	<top>
+		<VBox prefHeight="200.0" prefWidth="100.0"
+			BorderPane.alignment="CENTER">
+			<children>
+				<MenuBar>
+					<menus>
+						<Menu mnemonicParsing="false" text="파일">
+							<items>
+								<MenuItem mnemonicParsing="false" onAction="#handleNew"
+									text="새로만들기">
+									<accelerator>
+										<KeyCodeCombination alt="DOWN" code="N"
+											control="UP" meta="UP" shift="UP" shortcut="UP" />
+									</accelerator>
+								</MenuItem>
+								<MenuItem mnemonicParsing="false"
+									onAction="#handleOpen" text="열기">
+									<accelerator>
+										<KeyCodeCombination alt="UP" code="O"
+											control="UP" meta="UP" shift="UP" shortcut="UP" />
+									</accelerator>
+								</MenuItem>
+								<MenuItem mnemonicParsing="false"
+									onAction="#handleSave" text="저장">
+									<accelerator>
+										<KeyCodeCombination alt="UP" code="S"
+											control="UP" meta="UP" shift="UP" shortcut="UP" />
+									</accelerator>
+								</MenuItem>
+								<MenuItem fx:id="handleExit" mnemonicParsing="false"
+									onAction="#handleExit" text="끝내기" />
+							</items>
+						</Menu>
+					</menus>
+				</MenuBar>
+
+				<ToolBar prefHeight="40.0" prefWidth="200.0">
+					<items>
+						<Button mnemonicParsing="false" onAction="#handleNew"
+							text="New" />
+						<Button mnemonicParsing="false" onAction="#handleOpen"
+							text="Open" />
+						<Button mnemonicParsing="false" onAction="#handleSave"
+							text="Save" />
+						<ComboBox prefWidth="150.0" proptText="선택">
+							<items>
+								<FXCollections fx:factory="observableArrayList">
+									<String fx:value="공개" />
+									<String fx:value="비공개" />
+								</FXCollections>
+							</items>
+						</ComboBox>
+					</items>
+				</ToolBar>
+			</children>
+		</VBox>
+	</top>
+	
+	<center>
+		<TextArea fx:id="textArea" prefHeight="200.0"
+			prefWidth="200.0" BorderPane.alignment="CENTER" />
+	</center>
+</BorderPane>

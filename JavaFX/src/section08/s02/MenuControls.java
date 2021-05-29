@@ -1,4 +1,4 @@
-package section08.s01;
+package section08.s02;
 /*
  * 미디어 컨트롤
  * - MediaView

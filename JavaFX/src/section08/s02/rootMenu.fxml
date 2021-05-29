@@ -1,18 +1,15 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.*?>
 <?import javafx.scene.control.ComboBox?>
-<?import javafx.scene.control.Menu?>
-<?import javafx.scene.control.MenuBar?>
-<?import javafx.scene.control.MenuItem?>
-<?import javafx.scene.control.TextArea?>
-<?import javafx.scene.control.ToolBar?>
 <?import javafx.scene.input.KeyCodeCombination?>
 <?import javafx.scene.layout.BorderPane?>
 <?import javafx.scene.layout.VBox?>
+<?import javafx.collections.*?>
+<?import java.lang.*?>
 
 <BorderPane prefHeight="200.0" prefWidth="400.0"
-	xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1"
+ xmlns:fx="http://javafx.com/fxml"
 	fx:controller="section08.s01.MenuController">
 	<top>
 		<VBox prefHeight="200.0" prefWidth="100.0"
@@ -58,7 +55,7 @@
 							text="Open" />
 						<Button mnemonicParsing="false" onAction="#handleSave"
 							text="Save" />
-						<ComboBox prefWidth="150.0" proptText="선택">
+						<ComboBox prefWidth="150.0" promptText="선택">
 							<items>
 								<FXCollections fx:factory="observableArrayList">
 									<String fx:value="공개" />
@@ -71,6 +68,7 @@
 			</children>
 		</VBox>
 	</top>
+	
 	<center>
 		<TextArea fx:id="textArea" prefHeight="200.0"
 			prefWidth="200.0" BorderPane.alignment="CENTER" />
