@@ -1,14 +1,15 @@
 package exam01;
 
+import javafx.beans.property.SimpleIntegerProperty;
 import javafx.beans.property.SimpleStringProperty;
 import javafx.fxml.FXML;
 import javafx.scene.control.TextField;
 
 public class Students {
-	private String name;
-	private Integer kor;
-	private Integer math;
-	private Integer eng;
+	private SimpleStringProperty name;
+	private SimpleIntegerProperty kor;
+	private SimpleIntegerProperty math;
+	private SimpleIntegerProperty eng;
 	@FXML
 	private TextField tf1;
 
@@ -22,50 +23,53 @@ public class Students {
 	private TextField tf4;
 	
 	
-	public void Students(TextField tf1, TextField tf2, TextField tf3, TextField tf4) {
-		this.name = new String(tf1.getText());
-		this.kor = new Integer(Integer.parseInt(tf2.getText()));
-		this.math = new Integer(Integer.parseInt(tf3.getText()));
-		this.eng = new Integer(Integer.parseInt(tf4.getText()));
+	
+	public Students(TextField tf1, TextField tf2, TextField tf3, TextField tf4) {
+		this.name = new SimpleStringProperty(tf1.getText());//new String(tf1.getText());
+		this.kor = new SimpleIntegerProperty(Integer.parseInt(tf2.getText()));//new Integer(Integer.parseInt(tf2.getText()));
+		this.math = new SimpleIntegerProperty(Integer.parseInt(tf3.getText()));//new Integer(Integer.parseInt(tf3.getText()));
+		this.eng = new SimpleIntegerProperty(Integer.parseInt(tf4.getText()));//new Integer(Integer.parseInt(tf4.getText()));
+		//new Students(this.name=tf1.getText(),this.kor =Integer.parseInt(tf2.getText()),this.math =Integer.parseInt(tf3.getText()),this.eng=Integer.parseInt(tf4.getText()));
 		//this.eng = new Integer(eng);
-	}
+	} 
 	public Students(String name, int kor, int math, int eng) {
-		this.name = name;
-		this.kor = kor;
-		this.math = math;
-		this.eng = eng;
+		this.name = new SimpleStringProperty(name);
+		this.kor = new SimpleIntegerProperty(kor);
+		this.math =new SimpleIntegerProperty(math);
+		this.eng = new SimpleIntegerProperty(eng);
+		//new Students(this.name = name,this.kor = kor,this.math = math,this.eng = eng);
 		//this.eng = new Integer(eng);
 	}
 
 	public String getName() {
-		return name;
+		return name.get();
 	}
 
 	public void setName(String name) {
-		this.name = name;
+		this.name.set(name);
 	}
 
 	public Integer getKor() {
-		return kor;
+		return kor.get();
 	}
 
 	public void setKor(Integer kor) {
-		this.kor = kor;
+		this.kor.set(kor);
 	}
 
 	public Integer getMath() {
-		return math;
+		return math.get();
 	}
 
 	public void setMath(Integer math) {
-		this.math = math;
+		this.math.set(math); 
 	}
 
 	public Integer getEng() {
-		return eng;
+		return eng.get();
 	}
 
 	public void setEng(Integer eng) {
-		this.eng = eng;
+		this.eng.set(eng);
 	}
 }
