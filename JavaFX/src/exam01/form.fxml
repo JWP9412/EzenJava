@@ -57,7 +57,7 @@
    <bottom>
       <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="15.0" BorderPane.alignment="CENTER">
          <children>
-            <Button fx:id="btnSave" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleSaveBtn" text="저장" />
+            <Button id= "btnSave" fx:id="btnSave" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false"  text="저장" />
             <Button fx:id="btnCan" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" text="취소" />
          </children>
          <opaqueInsets>

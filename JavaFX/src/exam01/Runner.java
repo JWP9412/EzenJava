@@ -19,8 +19,8 @@ public class Runner extends Application {
 
 	public static void main(String[] args) throws Exception {
 		launch(args);
-		Students st1 = new Students("11",11,11,11);
-		System.out.println(st1.getName());
+		//Students st1 = new Students("t1",11,11,11);
+		//System.out.println(st1.getName());
 	}
 
 }

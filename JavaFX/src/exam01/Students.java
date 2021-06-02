@@ -23,6 +23,14 @@ public class Students {
 	private TextField tf4;
 	
 	
+	public Students() {
+		this.name = new SimpleStringProperty();//new String(tf1.getText());
+		this.kor = new SimpleIntegerProperty();
+		this.math = new SimpleIntegerProperty();//new Integer(Integer.parseInt(tf3.getText()));
+		this.eng = new SimpleIntegerProperty();//new Integer(Integer.parseInt(tf4.getText()));
+		//new Students(this.name=tf1.getText(),this.kor =Integer.parseInt(tf2.getText()),this.math =Integer.parseInt(tf3.getText()),this.eng=Integer.parseInt(tf4.getText()));
+		//this.eng = new Integer(eng);
+	} 
 	
 	public Students(TextField tf1, TextField tf2, TextField tf3, TextField tf4) {
 		this.name = new SimpleStringProperty(tf1.getText());//new String(tf1.getText());
