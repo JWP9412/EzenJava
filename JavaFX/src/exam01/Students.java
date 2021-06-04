@@ -31,7 +31,7 @@ public class Students {
 		//new Students(this.name=tf1.getText(),this.kor =Integer.parseInt(tf2.getText()),this.math =Integer.parseInt(tf3.getText()),this.eng=Integer.parseInt(tf4.getText()));
 		//this.eng = new Integer(eng);
 	} 
-	
+	/*
 	public Students(TextField tf1, TextField tf2, TextField tf3, TextField tf4) {
 		this.name = new SimpleStringProperty(tf1.getText());//new String(tf1.getText());
 		this.kor = new SimpleIntegerProperty(Integer.parseInt(tf2.getText()));//new Integer(Integer.parseInt(tf2.getText()));
@@ -40,6 +40,7 @@ public class Students {
 		//new Students(this.name=tf1.getText(),this.kor =Integer.parseInt(tf2.getText()),this.math =Integer.parseInt(tf3.getText()),this.eng=Integer.parseInt(tf4.getText()));
 		//this.eng = new Integer(eng);
 	} 
+	*/
 	public Students(String name, int kor, int math, int eng) {
 		this.name = new SimpleStringProperty(name);
 		this.kor = new SimpleIntegerProperty(kor);

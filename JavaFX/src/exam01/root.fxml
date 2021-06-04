@@ -9,7 +9,7 @@
 
 <BorderPane prefHeight="210.0" prefWidth="320.0" xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="exam01.E1Con">
    <center>
-      <TableView fx:id="tableView" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+      <TableView fx:id="tableView" onMouseClicked="#handleRowClicked" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
         <columns>
           <TableColumn prefWidth="75.0" text="이름" />
           <TableColumn prefWidth="75.0" text="국어" />
@@ -19,10 +19,14 @@
       </TableView>
    </center>
    <bottom>
-      <HBox alignment="CENTER" prefHeight="40.0" prefWidth="300.0" BorderPane.alignment="CENTER">
+      <HBox alignment="CENTER" prefHeight="40.0" prefWidth="300.0" spacing="15.0" BorderPane.alignment="CENTER">
          <children>
-            <Button fx:id="btnAdd" alignment="CENTER" mnemonicParsing="false" onAction="#handleAdd" text="추가" textAlignment="CENTER" />
+            <Button fx:id="btnAdd" alignment="CENTER" contentDisplay="TOP" mnemonicParsing="false" onAction="#handleAdd" text="추가" textAlignment="CENTER" />
+            <Button fx:id="btnBarChart" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" onAction="#handleBtnBarChart" text="막대그래프로 보기" textAlignment="CENTER" />
          </children>
+         <BorderPane.margin>
+            <Insets />
+         </BorderPane.margin>
       </HBox>
    </bottom>
    <padding>

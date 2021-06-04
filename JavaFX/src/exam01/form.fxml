@@ -10,7 +10,7 @@
 <?import javafx.scene.layout.HBox?>
 <?import javafx.scene.layout.RowConstraints?>
 
-<BorderPane xmlns="http://javafx.com/javafx/16" xmlns:fx="http://javafx.com/fxml/1" fx:controller="exam01.E1Con">
+<BorderPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="exam01.E1Con">
    <center>
       <GridPane alignment="CENTER" hgap="20.0" prefHeight="155.0" prefWidth="31.0" vgap="5.0" BorderPane.alignment="CENTER">
         <columnConstraints>
@@ -57,7 +57,7 @@
    <bottom>
       <HBox alignment="CENTER" prefHeight="50.0" prefWidth="200.0" spacing="15.0" BorderPane.alignment="CENTER">
          <children>
-            <Button id= "btnSave" fx:id="btnSave" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false"  text="저장" />
+            <Button fx:id="btnSave" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false"  text="저장" />
             <Button fx:id="btnCan" alignment="CENTER" contentDisplay="CENTER" mnemonicParsing="false" text="취소" />
          </children>
          <opaqueInsets>
