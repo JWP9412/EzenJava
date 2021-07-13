@@ -1,6 +1,8 @@
 /*
  * 변수의 사용 범위
  */
+
+package var;
 public class VariableScope2 {
 
 	public static void main(String[] args) {

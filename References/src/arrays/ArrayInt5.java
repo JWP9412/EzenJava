@@ -11,6 +11,7 @@ public class ArrayInt5 {
 
 	public static void main(String[] args) {
 		int[] a = null; // ±Ç°í
+//		int[] a;
 		
 		if(a == null) {
 			System.out.println("a is null :" + a);

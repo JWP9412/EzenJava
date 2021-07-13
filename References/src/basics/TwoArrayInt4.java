@@ -5,7 +5,7 @@ package basics;
 public class TwoArrayInt4 {
 
 	public static void main(String[] args) {
-		int[][] td = new int[3][];
+		int[][] td = new int[3][]; // 이런 형식으로 많이 쓰인다
 		
 		for(int row=0; row < td.length; row++) {
 			td[row] = new int[row + 1];

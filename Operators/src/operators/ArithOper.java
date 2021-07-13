@@ -17,7 +17,7 @@ public class ArithOper {
 		System.out.println(str3);
 		
 		String str4 = str3 + 99;
-		System.out.println(str4);
+		System.out.println("str4 :" + str4);
 		
 		
 		// ¥ı«œ±‚

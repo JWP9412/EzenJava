@@ -22,6 +22,11 @@ class Calc {
 		this.total = total;
 	}
 	
+	// 타입별로 가능하다 ex) int 하나 float 하나나
+//	Calc(int total1) {
+//		this.total = total;
+//	}
+	
 	Calc(Calc calc) {
 		total = calc.total();
 	}

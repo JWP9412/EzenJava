@@ -7,6 +7,8 @@
  * 특수문자
  * 다국어
  */
+package var;
+
 public class VariableChar {
 	public static void main(String[] args) {
 		char A = 'A';

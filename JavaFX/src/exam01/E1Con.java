@@ -59,18 +59,10 @@ public class E1Con implements Initializable {
 	private TableView<Students> tableView;
 
 	@FXML
-	private BarChart barBar;
-
-	@FXML
 	private PieChart pieChart;
-
-	private Stage ps;
 
 	private ObservableList<Students> list;
 
-	public void setPrimaryStage(Stage ps) {
-		this.ps = ps;
-	}
 
 	@Override
 	public void initialize(URL location, ResourceBundle resources) {
@@ -108,7 +100,6 @@ public class E1Con implements Initializable {
 			Stage dialog = new Stage(StageStyle.UTILITY);
 			dialog.initModality(Modality.WINDOW_MODAL);
 			dialog.initOwner(btnAdd.getScene().getWindow());
-			// dialog.initOwner(ps);
 			dialog.setTitle("추가");
 
 			Scene scene = new Scene(FXMLLoader.load(getClass().getResource("form.fxml")));
@@ -126,8 +117,13 @@ public class E1Con implements Initializable {
 				TextField tf3 = (TextField) scene.lookup("#tf3");
 				TextField tf4 = (TextField) scene.lookup("#tf4");
 
-				Students students = new Students(tf1.getText(), Integer.parseInt(tf2.getText()),
-						Integer.parseInt(tf3.getText()), Integer.parseInt(tf4.getText()));
+				Students students = new Students(
+						tf1.getText(), 
+						Integer.parseInt(tf2.getText()),
+						Integer.parseInt(tf3.getText()), 
+						Integer.parseInt(tf4.getText())
+						);
+				
 				list.add(students);
 				tf1.clear();
 				tf2.clear();
@@ -135,12 +131,10 @@ public class E1Con implements Initializable {
 				tf4.clear();
 				//dialog.close();
 			});
-
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+		} catch (Exception e) {	e.printStackTrace();}
 	}
 
+	
 	@FXML
 	void handleBtnBarChart(ActionEvent event) {
 		try {
@@ -158,6 +152,7 @@ public class E1Con implements Initializable {
 			// 바 차트 생성
 			BarChart barBar = (BarChart) barChartScene.lookup("#barBar");
 
+			//국어
 			XYChart.Series seKor = new XYChart.Series();
 			seKor.setName("국어");
 			ObservableList korList = FXCollections.observableArrayList();
@@ -167,6 +162,7 @@ public class E1Con implements Initializable {
 			seKor.setData(korList);
 			barBar.getData().add(seKor);
 
+			//수학
 			XYChart.Series seMath = new XYChart.Series();
 			seMath.setName("수학");
 			ObservableList mathList = FXCollections.observableArrayList();
@@ -176,6 +172,7 @@ public class E1Con implements Initializable {
 			seMath.setData(mathList);
 			barBar.getData().add(seMath);
 
+			//영어
 			XYChart.Series seEng = new XYChart.Series();
 			seEng.setName("영어");
 			ObservableList engList = FXCollections.observableArrayList();
@@ -187,10 +184,8 @@ public class E1Con implements Initializable {
 
 			Button chartBtnClose = (Button) barChartScene.lookup("#chartBtnClose");
 			chartBtnClose.setOnAction(e -> dialogBar.close());
-		} catch (IOException e) {
-			e.printStackTrace();
-		}
-
+			
+		} catch (IOException e) {e.printStackTrace();}
 	}
 
 	@FXML
@@ -198,7 +193,6 @@ public class E1Con implements Initializable {
 		if (event.getClickCount() != 2)
 			return;
 		try {
-
 			Stage dialogPie = new Stage(StageStyle.UTILITY);
 			dialogPie.initModality(Modality.WINDOW_MODAL);
 			dialogPie.initOwner(btnAdd.getScene().getWindow());
@@ -222,9 +216,7 @@ public class E1Con implements Initializable {
 			//dialogPie.setScene(scene);
 			dialogPie.setResizable(true);
 			dialogPie.show();
-		} catch (Exception e) {
-			e.printStackTrace();
-		}
+		} catch (Exception e) {e.printStackTrace();}
 	}
 
 }

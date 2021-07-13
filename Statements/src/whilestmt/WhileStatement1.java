@@ -9,11 +9,11 @@ public class WhileStatement1 {
 		int cnt = 0;
 		
 		while(++cnt <= 10) {
-			System.out.println("cnt=" + cnt);
+			System.out.println("1 cnt=" + cnt);
 		}
 		
 		while(cnt > 1) {
-			System.out.println("cnt=" + --cnt);
+			System.out.println("2 cnt=" + --cnt);
 		}
 	}
 }

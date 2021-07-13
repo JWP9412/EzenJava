@@ -3,6 +3,8 @@
  * 원시타입(primitive)의 변수는 사용되기 전에 반드시 값이 할당되어야 한다.
  */
 
+package var;
+
 public class VariableRead {
 	public static void main(String[] args) {
 		int x = 0;

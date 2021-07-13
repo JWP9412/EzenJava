@@ -14,11 +14,11 @@ public class Person {
 	
 	Person() {
 		this.ssn = "20210101-1234567";
-		// this.nation = "USA";
+//		 this.nation = "USA";
 	}
 	
 	Person(String ssn, String name) {
-		// this.nation = "USA";
+//		 this.nation = "USA";
 		this.ssn = ssn;
 		this.name = name;
 	}

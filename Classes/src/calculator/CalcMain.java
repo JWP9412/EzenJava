@@ -4,6 +4,7 @@ class CalcMain {
 
 	public static void main(String[] args) {
 		Calc calc = new Calc();
+//		int calc1 = new Calc();
 		
 		calc.plus(100);
 		calc.minus(50);

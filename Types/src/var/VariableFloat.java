@@ -2,6 +2,7 @@
  * 단정도 실수 : float
  * 부동소수점: 소수점을 포함하는 숫자
  */
+package var;
 
 public class VariableFloat {
 

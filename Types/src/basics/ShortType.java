@@ -2,9 +2,10 @@
  * 단정도 정수(short)
  * 2바이트(16비트)
  * 범위 : -32768~32767
- * 
+ * 부호없는 단정도 정수(unsigned short) : 0 ~ 65535
  */
 package basics;
+
 
 public class ShortType {
 

@@ -27,8 +27,8 @@ public class CreateInstanceRun {
 		}
 
 		// private CrateInstance이므로 객체를 생성할 수 없음
-		CreateInstance c4 =  new CreateInstance(x, y, z);
-		c4.setConfig(config);
+		CreateInstance c4 =  new CreateInstance(10, 20, 30);
+		c4.setConfig("plus");
 		c4.print();
 		*/
 	}
