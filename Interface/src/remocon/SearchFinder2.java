@@ -1,6 +1,6 @@
 package remocon;
 
-public class SearchFinder2 implements Finder, Searchable2 {
+public class SearchFinder2 implements Findable, Searchable2 {
 	
 	@Override
 	public void find(String text) {

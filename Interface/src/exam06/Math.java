@@ -5,4 +5,5 @@ public interface Math {
 	void minus(int mi);
 	void multiple(int mu);
 	void divide(int d);
+	
 }

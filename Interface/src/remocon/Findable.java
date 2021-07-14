@@ -1,6 +1,6 @@
 package remocon;
 
-public interface Finder {
+public interface Findable {
 	void find(String text);
 	
 }

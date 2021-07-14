@@ -11,7 +11,7 @@ public class SearchFinder2Example {
 		s2.search("인터넷주소2");
 		//s2.find("검색문자2);
 		
-		Finder finder = sf;
+		Findable finder = sf;
 		finder.find("검색문자3");
 		//finder.search("인터넷주소3");
 		

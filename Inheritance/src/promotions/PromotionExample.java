@@ -1,17 +1,14 @@
 package promotions;
 class A {}
 
-	class B extends A {
-	}
+	class B extends A {}
+	class C extends A {}
 
-	class C extends A {
-	}
+	
+	class D extends B {}
 
-	class D extends B {
-	}
-
-	class E extends C {
-	}
+	
+	class E extends C {}
 
 	
 public class PromotionExample {

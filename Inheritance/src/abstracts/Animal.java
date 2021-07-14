@@ -12,7 +12,7 @@ package abstracts;
 }*/
 
 public abstract class Animal {
-	public abstract void move();
+	public abstract void move(); // 추상적으로 생각만 해놨을 뿐 정하지는 않았다
 	/*
 	 * 추상 메소드는 구현을 가지고 있지 않다.
 	 * 상속한 클래스에서 구현을 해야 한다.

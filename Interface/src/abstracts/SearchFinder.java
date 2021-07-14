@@ -2,7 +2,7 @@
  * 추상 메소드인 lookup을 구현하지 않으면 추상 클래스로 만들어야 한다.
  * 그러므로 abstract class로 선언해야 한다.
  */
-package exam01;
+package abstracts;
 
 public abstract class SearchFinder implements SearchFindable {
 	

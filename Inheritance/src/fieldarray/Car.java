@@ -4,8 +4,11 @@ package fieldarray;
 public class Car {
 	// 필드
 
-	Tire[] tires = { new Tire("[1]앞왼쪽", 6), new Tire("[2]앞오른쪽", 2), new Tire("[3]뒤왼쪽", 3), new Tire("[4]뒤오른쪽", 4)
-
+	Tire[] tires = { 
+			new Tire("[1]앞왼쪽", 6), 
+			new Tire("[2]앞오른쪽", 2), 
+			new Tire("[3]뒤왼쪽", 3), 
+			new Tire("[4]뒤오른쪽", 4)
 	};
 	
 	int run() {

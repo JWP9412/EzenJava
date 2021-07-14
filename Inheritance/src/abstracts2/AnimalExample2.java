@@ -9,7 +9,7 @@ public class AnimalExample2 {
 	}
 
 	public static void animalMove(Animal animal) {
-		animal.move();
+		//animal.move();
 		if (animal instanceof Bird) {
 			
 			((Bird)animal).fly();
