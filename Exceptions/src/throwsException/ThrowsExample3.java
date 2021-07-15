@@ -1,7 +1,8 @@
 package throwsException;
 /*
- * 예외 떠너기기(throws)
+ * 예외 떠넘기기(throws)
  * 예외를 메소드를 호출한 곳으로 지정
+ * main()을 호출한 JVM에게 예외를 떠넘김
  */
 public class ThrowsExample3 {
 

@@ -6,7 +6,6 @@ public class Anonymous {
 		@Override
 		public void turnOn() {
 			System.out.println("TV¸¦ ÄÕ´Ï´Ù");
-			
 		}
 		
 		@Override
@@ -18,6 +17,7 @@ public class Anonymous {
 	void on() {
 		this.field.turnOn();
 	}
+	
 	void off() {
 		this.field.turnOff();
 	}
@@ -32,8 +32,7 @@ public class Anonymous {
 			
 			@Override
 			public void turnOff() {
-				System.out.println("Audio¸¦ ²ü´Ï´Ù");
-				
+				System.out.println("Audio¸¦ ²ü´Ï´Ù");			
 			}
 		};
 		audio.turnOn();

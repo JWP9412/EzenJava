@@ -13,6 +13,7 @@ public class AExample {
 		// A a = new A();
 		A.C.staticMethodC();
 		A.C.D d = new A.C.D();
+		
 		A.C c = new A.C();
 		c.methodC();
 

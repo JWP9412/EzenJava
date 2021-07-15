@@ -19,7 +19,7 @@ public class A {
 		}
 		static String staticfieldC = "staticfieldC"; 
 		C() {
-			System.out.println("C(정적 내부)클래스");
+			System.out.println("C(정적 내부) 클래스");
 		}
 		void methodC () {
 			System.out.println("C(정적 내부) 클래스의 인스턴스 멤버 메소드 : methodC()");

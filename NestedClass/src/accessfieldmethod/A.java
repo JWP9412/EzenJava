@@ -13,8 +13,8 @@ public class A {
 	
 	
 	//정적 필드는 this(객체레퍼런스)를 가지고 있지 않음
-	//static B staticFieldB = new B();
-	//static B staticFieldB = this.new B();
+//	static B staticFieldB = new B();
+//	static B staticFieldB = this.new B();
 	//클래스 C는 정적 멤버 클래스이므로 정적 필드 선언을 할 수 있다
 	static C staticFieldC = new C("staticFieldC = ");
 	A() {
