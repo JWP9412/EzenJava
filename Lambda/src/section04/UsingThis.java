@@ -10,7 +10,7 @@ public class UsingThis {
 	
 	void add(int a) {
 		this.outterField += a;
-		System.out.printf("UsingThis.add(%d), outterField(%d)\n",a,this.outterField);
+		System.out.printf("1. UsingThis.add(%d), outterField(%d)\n", a, this.outterField);
 	}
 	
 	class Inner{
@@ -21,14 +21,16 @@ public class UsingThis {
 			MyFunctionalInterface fi =()->	{
 				int outterField = 99;
 				int innerField = 77;
-				System.out.println("outterField : "+outterField); // 람다식에 선언된 필드를 참조
-				System.out.println("outterField UsingThis.this.outterField: "+UsingThis.this.outterField + "\n");// 바깥 객체의 참조를 얻기 위해서는 클래스명.this.필드를 사용
+				System.out.println("2. outterField : "+outterField); // 람다식에 선언된 필드를 참조
+				System.out.println("3. outterField UsingThis.this.outterField: "+
+				UsingThis.this.outterField + "\n");// 바깥 객체의 참조를 얻기 위해서는 클래스명.this.필드를 사용
 				
 				// 람다식에 선언된 필드를 참조하지 못한다. (선언되지 않은 것으로 인식)
 				//System.out.println("outterField this.outterField: "+this.outterField + "\n"); 
 				
-				System.out.println("innerField : "+ innerField); // 람다식에 선언된 필드를 참조
-				System.out.println("innerField this.innerField: "+ this.innerField+"\n");//람다식 내부에서 this.는 Inner 객체를 참조
+				System.out.println("4. innerField : "+ innerField); // 람다식에 선언된 필드를 참조
+				System.out.println("5. innerField this.innerField: "+ this.innerField+"\n");//람다식 내부에서 this.는 Inner 객체를 참조
+				System.out.println("6. innerField Inner.this.innerField: "+ Inner.this.innerField+"\n");//람다식 내부에서 this.는 Inner 객체를 참조
 			};
 			fi.method();
 		}

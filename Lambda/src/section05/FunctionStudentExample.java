@@ -12,7 +12,7 @@ import java.util.List;
 import java.util.function.Predicate;
 
 
-public class PredicateExample {
+public class FunctionStudentExample {
 	private static List<Student> list = Arrays.asList(
 			new Student("Hong", "Male", 90),
 			new Student("Kim", "Fe", 90),
@@ -40,14 +40,15 @@ public static double avg(Predicate<Student> predicate) {
 		});
 		System.out.println("남자 평균 점수 : "+maleAvg);
 		
+		
 		double femaleAvg = avg(new Predicate<Student>() {
 			@Override
 			public boolean test(Student t) {
 				return t.getSex().equals("Fe");
 			}
 		});
-				
 		System.out.println("여자 평균 점수 : "+femaleAvg);
+		
 		
 		double aniAvg = avg(t -> t.getSex().equals("Ani"));
 		System.out.println("동물 평균 점수 : "+aniAvg);

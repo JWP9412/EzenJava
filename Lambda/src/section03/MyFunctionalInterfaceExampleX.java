@@ -12,28 +12,28 @@ public class MyFunctionalInterfaceExampleX {
 	
 	static void step1() {
 		MyFunctionalInterfaceX myfunc = (int x) -> {
-			System.out.println("MyFunctionalInterfaceX: x= " +x);
+			System.out.println("MyFunctionalInterfaceX1: x= " +x);
 		};
 		myfunc.method(99);
 	}
 	
 	static void step2() {
 		MyFunctionalInterfaceX myfunc = (x) -> {
-			System.out.println("MyFunctionalInterfaceX: x= " +x);
+			System.out.println("MyFunctionalInterfaceX2: x= " +x);
 		};
 		myfunc.method(88);
 	}
 	
 	static void step3() {
 		MyFunctionalInterfaceX myfunc = x -> {
-			System.out.println("MyFunctionalInterfaceX: x= " +x);
+			System.out.println("MyFunctionalInterfaceX3: x= " +x);
 		};
 		myfunc.method(77);
 	}
 	
 	static void step4() {
 		MyFunctionalInterfaceX myfunc = x -> 
-			System.out.println("MyFunctionalInterfaceX: x= " +x);
+			System.out.println("MyFunctionalInterfaceX4: x= " +x);
 		myfunc.method(66);
 	}
 }

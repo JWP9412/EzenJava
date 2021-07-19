@@ -1,9 +1,8 @@
 package section02.generic;
 
-public class BoxExample2 {
+public class BoxExample1 {
 	public static void main(String[] args) {
-//		Box<String> box = new Box<String>();
-//		Box<int> box = new Box<int>();
+		//Box<String> box = new Box<String>();
 		Box<Integer> box = new Box<Integer>();
 		box.set(99);
 

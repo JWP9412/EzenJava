@@ -5,6 +5,7 @@ package section04;
  * - 메소드에 독립적으로 제너릭을 적용 할 때
  * - public <T> R method(T t){}
  */
+
 public class Util {
 	public static <T> Box<T> boxing(T t) {
 		Box<T> box = new Box<T>();

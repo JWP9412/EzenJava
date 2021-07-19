@@ -19,6 +19,6 @@ public class ConsumerAndThenExample {
 		
 		System.out.println("[andThen Ã³¸®]");
 		Consumer<Member> consumerAB = consumerA.andThen(consumerB);
-		consumerAB.accept(new Member("Hong","ghd",null));
+		consumerAB.accept(new Member("Kim","LLL",null));
 	}
 }

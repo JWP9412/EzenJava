@@ -13,6 +13,12 @@ public class MyFunctionalInterfaceExample {
 		};
 		myfunc.method();
 		localImplements();
+		
+//		static이 없을 경우
+//		MyFunctionalInterfaceExample example = new MyFunctionalInterfaceExample();
+//		example.localImplements();
+
+		
 		callInnerClass();
 	}
 
