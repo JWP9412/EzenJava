@@ -43,7 +43,8 @@ public class BoardLinkedListAndArrayList2 {
 		}
 	
 	static void printTime(String title, long startTime, long endTime) {
-		double xsec = (endTime - startTime) /100000000.0;
+//		double xsec = (endTime - startTime) /1000000000.0;
+		double xsec = (endTime - startTime) /1.0e9; // 10억분의 1초
 		System.out.printf("[%s] 처리시간(%d)ns [%f]\n",title,(endTime - startTime),xsec);
 	}
 	

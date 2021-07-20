@@ -12,6 +12,7 @@ public class ArrayList01 {
 		listLangs.add("1.Java");
 		listLangs.add("2.JavaScript");
 		listLangs.add("3.Python");
+		listLangs.add("1.Java");	//중복 가능
 		
 		for(String a : listLangs) {
 			System.out.println(a);
