@@ -1,3 +1,7 @@
+/*
+ * Runnable 인터페이스의 구현클래스의 객체를 생성하여
+ * Thread의 생성자로 전달하여 스레드를 처리
+ */
 package beep;
 
 public class BeepTaskRun {
@@ -14,6 +18,7 @@ public class BeepTaskRun {
 	
 		// 스레드가 종료 되기 전에 먼저 메인 스레드가 종료
 		System.out.println("main thread end");
+		System.out.println("THE END");
 	}
 
 }
