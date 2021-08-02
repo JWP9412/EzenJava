@@ -5,7 +5,7 @@ import java.io.ObjectOutputStream;
 
 public class SerialVersionUIDExample1 {
 	public static void main(String[] args) throws Exception {
-		FileOutputStream fos = new FileOutputStream("C:/Temp/Object.dat");
+		FileOutputStream fos = new FileOutputStream("C:/Temp/Java/Object-classc.dat");
 		ObjectOutputStream oos = new ObjectOutputStream(fos);		
 		ClassC classC = new ClassC();
 		classC.field1 = 1;
@@ -13,3 +13,4 @@ public class SerialVersionUIDExample1 {
 		oos.flush();	oos.close();  fos.close();	
 	}
 }
+

@@ -7,13 +7,15 @@ import java.io.ObjectInputStream;
 import java.io.ObjectOutputStream;
 
 public class SerializableReader {
+	static final String filename = "C:/Temp/Java/Object-classab.dat";
+	
 	public static void main(String[] args) throws Exception {
-		FileInputStream fis = new FileInputStream("C:/Temp/Object.dat");
+		FileInputStream fis = new FileInputStream(filename);
 		ObjectInputStream ois = new ObjectInputStream(fis);
-		ClassA v = (ClassA) ois.readObject();
-		System.out.println("field1: " + v.field1);
-		System.out.println("field2.field1: " + v.field2.field1);
-		System.out.println("field3: " + v.field3);
-		System.out.println("field4: " + v.field4);
+		ClassA classA = (ClassA) ois.readObject();
+		System.out.println("field1: " + classA.field1);
+		System.out.println("classb.field1: " + classA.classb.field1);
+		System.out.println("field3: " + classA.field3);
+		System.out.println("field4: " + classA.field4);
 	}
 }

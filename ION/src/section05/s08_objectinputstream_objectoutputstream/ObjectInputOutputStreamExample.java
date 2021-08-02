@@ -7,7 +7,7 @@ import java.io.ObjectOutputStream;
 
 public class ObjectInputOutputStreamExample {
 	public static void main(String[] args) throws Exception {
-		FileOutputStream fos = new FileOutputStream("C:/Temp/Object.dat");
+		FileOutputStream fos = new FileOutputStream("C:/Temp/Java/Object.dat");
 		ObjectOutputStream oos = new ObjectOutputStream(fos);		
 		
 		oos.writeObject(new Integer(10));
@@ -15,9 +15,11 @@ public class ObjectInputOutputStreamExample {
 		oos.writeObject(new int[] { 1, 2, 3 });
 		oos.writeObject(new String("ȫ�浿"));
 		
-		oos.flush();	oos.close(); fos.close();
+		oos.flush();	
 		
-		FileInputStream fis = new FileInputStream("C:/Temp/Object.dat");
+		oos.close();	fos.close();
+		
+		FileInputStream fis = new FileInputStream("C:/Temp/Java/Object.dat");
 		ObjectInputStream ois = new ObjectInputStream(fis);
 		
 		Integer obj1 = (Integer) ois.readObject();
@@ -25,7 +27,7 @@ public class ObjectInputOutputStreamExample {
 		int[] obj3 = (int[]) ois.readObject();
 		String obj4 = (String) ois.readObject();
 		
-		ois.close(); fis.close();
+		ois.close();	fis.close();
 		
 		System.out.println(obj1);
 		System.out.println(obj2);
